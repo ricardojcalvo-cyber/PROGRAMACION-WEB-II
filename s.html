@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>S - Responsabilidad Única</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div th:replace="~{fragments/menu :: menu(${active})}"></div>
+
+<main>
+    <h1>S: Single Responsibility Principle</h1>
+    <p>El Principio de Responsabilidad Única establece que una clase debe tener una sola razón
+        para cambiar, es decir, debe encargarse de una única responsabilidad dentro del sistema.
+        Cuando una clase mezcla varias tareas, como validar datos, guardar en base de datos y
+        enviar correos, cualquier cambio en una de ellas puede romper las demás.</p>
+    <p>Aplicarlo produce clases pequeñas, cohesivas y fáciles de probar y mantener. En Spring
+        esto se refleja al separar controladores, servicios y repositorios, cada uno con un
+        propósito claro.</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>D - Inversión de Dependencias</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div th:replace="~{fragments/menu :: menu(${active})}"></div>
+
+<main>
+    <h1>D: Dependency Inversion Principle</h1>
+    <p>El Principio de Inversión de Dependencias plantea que los módulos de alto nivel no deben
+        depender de módulos de bajo nivel; ambos deben depender de abstracciones. Además, las
+        abstracciones no deben depender de los detalles, sino los detalles de las abstracciones.</p>
+    <p>Spring lo materializa con la inyección de dependencias: un servicio recibe una interfaz
+        (por ejemplo, <code>UsuarioRepository</code>) por constructor y el contenedor decide qué
+        implementación concreta proporcionar, lo que facilita el cambio y las pruebas.</p>
+</main>
+</body>
+</html>

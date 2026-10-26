@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>I - Segregación de Interfaces</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div th:replace="~{fragments/menu :: menu(${active})}"></div>
+
+<main>
+    <h1>I: Interface Segregation Principle</h1>
+    <p>El Principio de Segregación de Interfaces sostiene que ningún cliente debería verse
+        obligado a depender de métodos que no utiliza. Es preferible tener varias interfaces
+        pequeñas y específicas que una interfaz grande y genérica.</p>
+    <p>Así, una clase que solo necesita imprimir no debe implementar una interfaz que además
+        exija escanear y enviar fax. Esto reduce el acoplamiento y evita implementaciones
+        vacías o que lanzan excepciones.</p>
+</main>
+</body>
+</html>

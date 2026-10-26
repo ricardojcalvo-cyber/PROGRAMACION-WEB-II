@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>O - Abierto/Cerrado</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div th:replace="~{fragments/menu :: menu(${active})}"></div>
+
+<main>
+    <h1>O: Open/Closed Principle</h1>
+    <p>El Principio Abierto/Cerrado indica que las entidades de software (clases, módulos,
+        funciones) deben estar abiertas para su extensión pero cerradas para su modificación.
+        Es decir, se debe poder agregar nuevo comportamiento sin alterar el código ya probado
+        y en funcionamiento.</p>
+    <p>Esto se logra mediante abstracciones, interfaces y polimorfismo. Por ejemplo, en lugar
+        de un <code>if/else</code> gigante para calcular descuentos, se define una interfaz
+        <code>Descuento</code> y se crean nuevas implementaciones cuando aparecen nuevas reglas.</p>
+</main>
+</body>
+</html>

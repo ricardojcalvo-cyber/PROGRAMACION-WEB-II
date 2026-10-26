@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<nav th:fragment="menu(active)" class="menu">
+    <a th:href="@{/s}" th:classappend="${active == 's'} ? 'active'">S</a>
+    <a th:href="@{/o}" th:classappend="${active == 'o'} ? 'active'">O</a>
+    <a th:href="@{/l}" th:classappend="${active == 'l'} ? 'active'">L</a>
+    <a th:href="@{/i}" th:classappend="${active == 'i'} ? 'active'">I</a>
+    <a th:href="@{/d}" th:classappend="${active == 'd'} ? 'active'">D</a>
+</nav>
+</body>
+</html>

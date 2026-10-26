@@ -1,0 +1,9 @@
+body { font-family: Arial, sans-serif; margin: 0; background: #f5f6fa; color: #2d3436; }
+.menu { display: flex; gap: 8px; background: #2d3436; padding: 12px 24px; }
+.menu a { color: #dfe6e9; text-decoration: none; font-weight: bold; font-size: 1.2rem;
+    padding: 8px 18px; border-radius: 6px; }
+.menu a:hover { background: #636e72; }
+.menu a.active { background: #0984e3; color: #fff; }
+main { max-width: 800px; margin: 32px auto; padding: 0 24px; line-height: 1.6; }
+h1 { color: #0984e3; }
+code { background: #dfe6e9; padding: 2px 6px; border-radius: 4px; }

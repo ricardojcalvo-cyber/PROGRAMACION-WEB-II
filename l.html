@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>L - Sustitución de Liskov</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div th:replace="~{fragments/menu :: menu(${active})}"></div>
+
+<main>
+    <h1>L: Liskov Substitution Principle</h1>
+    <p>El Principio de Sustitución de Liskov afirma que los objetos de una clase derivada deben
+        poder reemplazar a los de su clase base sin alterar el correcto funcionamiento del
+        programa. Una subclase no debe romper los contratos ni las expectativas definidas por
+        la superclase.</p>
+    <p>Un ejemplo de violación es una clase <code>Pinguino</code> que hereda de <code>Ave</code>
+        y lanza una excepción en el método <code>volar()</code>. Para respetar el principio, se
+        diseñan jerarquías donde toda subclase cumpla realmente el comportamiento heredado.</p>
+</main>
+</body>
+</html>
